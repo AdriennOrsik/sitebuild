@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #22b573;
+  font-family: sans-serif;
+}
+
+div#btnMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+div#btnMenu:hover {
+  cursor: pointer;
+}
+
+div#btnMenu svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div#btnMenu svg rect {
+  fill: white;
+  transform-box: fill-box;
+}
+
+div#btnMenu svg .a {
+  -webkit-transform: translate(10px, 12px);
+          transform: translate(10px, 12px);
+}
+
+body.clicked div#btnMenu svg .a {
+  -webkit-transform: rotate(45deg) translate(18px, -1px);
+          transform: rotate(45deg) translate(18px, -1px);
+}
+
+div#btnMenu svg .b {
+  -webkit-transform: translate(10px, 19px);
+          transform: translate(10px, 19px);
+}
+
+body.clicked div#btnMenu svg .b {
+  opacity: 0;
+}
+
+div#btnMenu svg .c {
+  -webkit-transform: translate(10px, 26px);
+          transform: translate(10px, 26px);
+}
+
+body.clicked div#btnMenu svg .c {
+  -webkit-transform: rotate(-45deg) translate(-10px, 27px);
+          transform: rotate(-45deg) translate(-10px, 27px);
+}
+
+nav#nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100vh;
+  background-color: rgba(153, 153, 153, 0.534);
+  color: white;
+  -webkit-transition: right 400ms;
+  transition: right 400ms;
+  z-index: 2;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.6em;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.3em;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 900px) {
+  #articles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2em;
+  }
+  #articles #imgCont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2em;
+  }
+  #articles .article {
+    margin: 4em;
+  }
+  #articles:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2em 5em;
+}
+
+.article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2em;
+}
+
+.article h2,
+.article p {
+  color: #fcb84c;
+}
+
+.article h2 {
+  font-size: 1.2em;
+  line-height: 200%;
+}
+
+.article p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.article:nth-child(odd) {
+  background-color: black;
+}
+
+.article:nth-child(odd) .details {
+  color: white;
+}
+
+.article:nth-child(even) {
+  background-color: white;
+}
+
+.article:nth-child(even) .details {
+  color: black;
+}
+
+.article:nth-child(2) {
+  margin-left: 4em;
+  margin-right: 4em;
+}
+
+.article .fa-play-circle {
+  color: white;
+}
+
+#video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
